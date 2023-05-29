@@ -21,7 +21,7 @@ const RegisterForm = () => {
         console.log(e);
         message.open({
           type: 'error',
-          content: e.response.data.error || 'Registration error'
+          content: e.response.data.message || 'Registration error'
         })
         setDisabledBtn(false)
       }
